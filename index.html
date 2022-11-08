@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parking Lot</title>
+</head>
+
+<body style="background-color:rgb(178, 194, 109);">
+    <header class="shadow">
+        <div class="Heading">
+            <h1 div id="header-msg" class="Head">Parking Lot
+        </div h1>
+        </div>
+    </header>
+    <input type="text" id="onId" placeholder="Enter you Name">
+    <!-- <input type="text" id="vtId" placeholder="Enter Vehicle Type "> -->
+    <label for="cars">Choose Vehicle Type:</label>
+
+    <select id="vtId">
+        <option value="2">2 Wheeler</option>
+        <option value="4">4 Wheeler</option>
+    </select>
+
+    <input type="text" id="vnId" placeholder="Enter Vehicle Number">
+    <button onclick="slotBook()">Book Slot </button>
+
+
+    <div class="table-container mt-5 mb-5 w-75 mx-auto">
+        <h3 class="text-center mb-3">List of Cars in Parking Lot</h3>
+        <table class="table table-striped shadow " id="parkingTable">
+            <thead class="text-white" id="tableHead">
+                <tr>
+                    <th scope="col">Owner</th>
+                    <!-- <th scope="col">Car</th> -->
+                    <th scope="col">Vehicle number</th>
+                    <!-- <th scope="col">Vehicle Type</th> -->
+                    <th scope="col">Vehicle Type</th>
+                    <th scope="col">Slot number</th>
+                    <!-- <th scope="col">Checkout</th> -->
+                </tr>
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+        <br> Vehicle Number:- <input type="text" id="checkOutVnId" placeholder="Vehicle Number"> </br>
+        <!-- <br>Vehicle Type <input type="text" id="checkOutVtId"></br> -->
+        <br> <label for="cars">Choose Vehicle Type:</label>
+
+        <select id="checkOutVtId">
+            <option value="2">2 Wheeler</option>
+            <option value="4">4 Wheeler</option>
+        </select></br>
+
+        <br><button onclick="checkout()">Check Out </button></br>
+        <br> Total Charges Collected <input type="text" id="totalChargeCollectedId" placeholder="Total Charges for Mall"></br>
+    </div>
+
+    <script src="./JS/core.js"></script>
+</body>
+
+</html>
